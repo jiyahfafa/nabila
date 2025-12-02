@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Mewah</title>
+
+    <!-- Google Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Poppins", sans-serif;
+            color: #fff;
+        }
+
+        /* Background Utama */
+        .hero {
+            background: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c') no-repeat center/cover;
+            height: 100vh;
+            width: 100%;
+            position: relative;
+        }
+
+        /* Overlay gelap */
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.55);
+        }
+
+        /* Navbar */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            position: relative;
+            z-index: 10;
+        }
+
+        nav a {
+            color: #fff;
+            margin-left: 25px;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .judul {
+            font-size: 50px;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 25vh;
+            z-index: 10;
+            position: relative;
+        }
+
+        .section {
+            padding: 90px 40px;
+            background: #1b1b1b;
+        }
+
+        .section h2 {
+            color: #e0c48f;
+            font-size: 40px;
+        }
+
+        .services {
+            display: flex;
+            gap: 40px;
+            margin-top: 30px;
+        }
+
+        .service-card {
+            background: #2c2c2c;
+            padding: 25px;
+            border-radius: 14px;
+            width: 30%;
+        }
+
+        /* Contact */
+        .contact-info {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+
+        .contact-info i {
+            margin-right: 10px;
+            color: #e0c48f;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HOME -->
+    <div class="hero" id="home">
+        <div class="overlay"></div>
+
+        <nav>
+            <div style="font-size: 26px; font-weight: 700;">Hotel Mewah</div>
+            <div>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+
+        <div class="judul">Selamat Datang di Hotel Mewah</div>
+    </div>
+
+    <!-- ABOUT -->
+    <div class="section" id="about">
+        <h2>About Us</h2>
+        <p>
+            Hotel Mewah adalah hotel bintang lima yang menghadirkan pengalaman menginap terbaik 
+            dengan sentuhan elegan dan pelayanan premium. Kami menawarkan kenyamanan kelas dunia 
+            melalui desain interior modern, fasilitas eksklusif, serta staf profesional yang siap 
+            melayani 24 jam.
+        </p>
+    </div>
+
+    <!-- SERVICES -->
+    <div class="section" id="services">
+        <h2>Services</h2>
+
+        <div class="services">
+            <div class="service-card">
+                <h3>🏨 Kamar Premium</h3>
+                <p>Kamar mewah dengan pemandangan kota, fasilitas lengkap, dan kenyamanan maksimal.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>🍽 Restoran Eksklusif</h3>
+                <p>Menyajikan hidangan internasional dengan cita rasa terbaik dari chef profesional.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>💆 Spa & Wellness</h3>
+                <p>Nikmati relaksasi total dengan layanan spa premium dan fasilitas kebugaran modern.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="section" id="contact">
+        <h2>Contact</h2>
+        <p>Hubungi kami untuk informasi lebih lanjut atau reservasi.</p>
+
+        <div class="contact-info">
+            <p><i class="fa-solid fa-phone"></i> 0838-2451-8643</p>
+            <p><i class="fa-solid fa-envelope"></i> bbilaa03@gmail.com</p>
+            <p><i class="fa-brands fa-instagram"></i> @nbilatz_03</p>
+        </div>
+    </div>
+
+</body>
+</html>
